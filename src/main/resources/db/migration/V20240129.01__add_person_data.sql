@@ -1,0 +1,1 @@
+INSERT INTO PERSON VALUES ('a4f0d082-2a2f-49e2-987b-f57524a70406', 'Steve'), ('b91fba58-6f4a-43da-99bb-c4b9aa0f979c', 'Mary'), ('b0be8168-f8b5-4ab4-b4fc-da8532cdef85', 'George'), ('8dfb0cb4-3ef2-4687-8b6a-d53398d2f845', 'Albatross'), ('c0e7dab4-6167-4fc3-8f26-999e794a6361', 'Olivia');
