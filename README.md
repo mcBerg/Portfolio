@@ -1,45 +1,36 @@
 # My App
 
-This project can be used as a starting point to create your own Vaadin application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+This project is mostly a demonstration of tech stacks I'm familiar / fluent in, though a few bits are new when necessary.
+I hadn't previously used Vaadin, but it's coming along easily enough.
 
-## Running the application
+## Vaadin: Front End
+Being that I know java I stuck to that for the front end development so far. Vaadin is a bit outdated but I'm not
+planning to do anything too fancy with it, so it should work just fine for me. It is a new thing to learn, so forgive me
+while I experiment to figure it out.
 
-The project is a standard Maven project. To run it from the command line,
-type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
-http://localhost:8080 in your browser.
+## Spring:
+I'm not entirely familiar with all the different things springs simplifies. I've been adding them as needed. I'll try
+to keep an updated list
+- Spring-Boot
+- Spring-Data
+- H2 database
+- Flyway
+- Lombok
+- Vaadin-Integration
+- Quartz
+- JPA
+- JDBC
+- RestApi
+- Maven
+- Mockito (Not yet implemented)
 
-You can also import the project to your IDE of choice as you would with any
-Maven project. Read more on [how to import Vaadin projects to different IDEs](https://vaadin.com/docs/latest/guide/step-by-step/importing) (Eclipse, IntelliJ IDEA, NetBeans, and VS Code).
+# Plans
+I'd like to just get some simple objects stored in a database that make sense to have relationships
+- Person: should probably implement parents and family lines, as upline / downline is a common ask
+- House: add houses and associate people with them
+- Quartz: slow down how often new people are added finish the messaging tutorial and implement a day / night cycle?
+- Vaadin: finish up the Push/subscribe tutorials so the front end updates when new people are added to the database
+- Person and House will need views and the navigation should come from clicking on them. 
+- Jobs/Roles: add some kind of roles Farmer/Builder/etc for the persons to perform as needed... perhaps a message queue?
 
-## Deploying to Production
 
-To create a production build, call `mvnw clean package -Pproduction` (Windows),
-or `./mvnw clean package -Pproduction` (Mac & Linux).
-This will build a JAR file with all the dependencies and front-end resources,
-ready to be deployed. The file can be found in the `target` folder after the build completes.
-
-Once the JAR file is built, you can run it using
-`java -jar target/my-app-1.0-SNAPSHOT.jar`
-
-## Project structure
-
-- `MainLayout.java` in `src/main/java` contains the navigation setup (i.e., the
-  side/top bar and the main menu). This setup uses
-  [App Layout](https://vaadin.com/docs/components/app-layout).
-- `views` package in `src/main/java` contains the server-side Java views of your application.
-- `views` folder in `frontend/` contains the client-side JavaScript views of your application.
-- `themes` folder in `frontend/` contains the custom CSS styles.
-
-## Useful links
-
-- Read the documentation at [vaadin.com/docs](https://vaadin.com/docs).
-- Follow the tutorial at [vaadin.com/docs/latest/tutorial/overview](https://vaadin.com/docs/latest/tutorial/overview).
-- Create new projects at [start.vaadin.com](https://start.vaadin.com/).
-- Search UI components and their usage examples at [vaadin.com/docs/latest/components](https://vaadin.com/docs/latest/components).
-- View use case applications that demonstrate Vaadin capabilities at [vaadin.com/examples-and-demos](https://vaadin.com/examples-and-demos).
-- Build any UI without custom CSS by discovering Vaadin's set of [CSS utility classes](https://vaadin.com/docs/styling/lumo/utility-classes). 
-- Find a collection of solutions to common use cases at [cookbook.vaadin.com](https://cookbook.vaadin.com/).
-- Find add-ons at [vaadin.com/directory](https://vaadin.com/directory).
-- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vaadin) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
-- Report issues, create pull requests in [GitHub](https://github.com/vaadin).
